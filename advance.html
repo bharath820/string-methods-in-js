@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//TASK 1      Username Validation
+
+
+let str=prompt("Enter a username")
+
+if(str.length>=5 && str.length<=15){
+    console.log("Valid username")
+}
+else{
+    console.log(" not valid username")
+}
+
+
+
+
+//Task 2    Email Formatter
+
+
+let first=prompt("Enter the firstname").toLowerCase();
+let last=prompt("Enter the lastname").toLowerCase();
+let mail=`${first}.${last}@gmail.com`;
+console.log(mail);
+
+
+
+
+
+//TASK 3   Word Counter
+
+
+
+let word=prompt("Enter a sentence");
+  const lines = word.split(" ").length;
+console.log(lines);
+
+
+
+
+
+//TASK 4   Palindrome Checker 
+
+
+let pali=prompt("Enter a string")
+let haaa=""
+for(i=pali.length-1;i>=0;i--){
+haaa+=pali[i]
+}
+if(pali==haaa){
+    console.log("palindrome")
+}
+else{
+    console.log("not a palindrome")
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
